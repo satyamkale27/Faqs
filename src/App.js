@@ -27,7 +27,7 @@ export default function App() {
 function Accordion({ data }) {
   const [curopen, setIsopen] = useState(null);
   function handleToggle(numms) {
-    setIsopen((prevNum) => (prevNum === numms ? null : numms));
+    setIsopen((curopen) => (curopen === numms ? null : numms));
   }
 
   return (
